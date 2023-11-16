@@ -1,0 +1,148 @@
+/*Importando fontes do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap');
+
+/*Variavel cores*/
+:root {
+
+    --txt-primary-LP: #15BFA0;
+    --txt-secomdary-LP: #F2F2F0;
+    --txt-program: #151616;
+    --btn-1: #15BFA0;
+    --btn-2:#8C1F1F;
+
+}
+
+/*Zerando a formatação automatica do css*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    
+}
+
+ body {
+      
+      /*imagendo de fundo e degrader*/
+      background: linear-gradient(rgba(17,17,17,0.8),rgb(11, 45, 46)), url(img/futuristic-fundo.jpg); 
+      /*posicionamento da imagem*/
+      background-size: cover;
+      background-position: center center;
+      background-position-y: 0px;
+      background-repeat: no-repeat;
+  }
+  /*alinhamento e posicionamento do main*/
+#main-login
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*customizando o conteudo do lado esquendo*/
+.left-conteudo
+{   
+    width: 50vw;
+    height: 100vh;
+    padding: 10% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+    flex-direction: column;
+    color: #F2F2F0;
+    box-shadow: 0px 10px 40px #032221;;
+}
+
+.left-conteudo > h1
+{
+    color: var(--txt-primary-LP);
+    font-weight: 800;
+    font-size: 4rem;
+}
+.left-conteudo > h2 
+{
+    font-size: 2rem;
+}
+/*customizando o conteudo do lado direito formulário*/
+
+.right-conteudo
+{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2F2;
+}
+.formulario 
+{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #0b4746;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #032221; /*Sombreamento da cor de fundo do formulario*/
+}
+.formulario > h1 
+{
+    font-weight: 700;
+    margin: 0;
+}
+
+.campo-txt
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.campo-txt > input
+{
+    width: 100%;
+    border:none ;
+    border-radius: 10px;
+    padding:15px;
+    font-size: 12pt;
+    box-shadow: 4px 10px 40px #032221;
+    outline: none;
+    box-sizing: border-box;
+    
+}
+.campo-txt > label
+{
+    color: var(--txt-secomdary-LP);
+    margin-bottom: 10px;
+}
+.campo-txt > input ::placeholder
+{
+    color: #868a8d;
+}
+.btn-login
+{
+    width: 50%;
+    padding: 10px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight:600;
+    color: var(--txt-program);
+    background: var(--btn-1);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #032221 ;
+
+
+}
+
+
+
+
+ 
+
